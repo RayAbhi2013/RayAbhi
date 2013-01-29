@@ -1,0 +1,84 @@
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (138.5ms)[0m  [1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (2090.3ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)
+  [1m[36m (0.9ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Migrating to CreateAbhis (20130126150408)
+  [1m[35m (77.0ms)[0m  CREATE TABLE `abhis` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `roll` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (103.2ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20130126150408')[0m
+  [1m[35m (0.2ms)[0m  SELECT `schema_migrations`.`version` FROM `schema_migrations` 
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2013-01-26 20:41:26 +0530
+Connecting to database specified by database.yml
+Served asset /rails.png - 200 OK (15ms)
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (160.3ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Migrating to DeleteUserTable (20130128133126)
+  [1m[35m (148.1ms)[0m  DROP TABLE `abhis`
+  [1m[36m (62.6ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20130128133126')[0m
+  [1m[35m (0.1ms)[0m  SELECT `schema_migrations`.`version` FROM `schema_migrations` 
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.8ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Migrating to DeleteUserTable (20130128133126)
+Migrating to CreateUsers (20130128134403)
+  [1m[35m (181.6ms)[0m  CREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `roll` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (21.0ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20130128134403')[0m
+  [1m[35m (0.2ms)[0m  SELECT `schema_migrations`.`version` FROM `schema_migrations` 
+Connecting to database specified by database.yml
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2013-01-28 19:16:07 +0530
+Connecting to database specified by database.yml
+Served asset /rails.png - 304 Not Modified (12ms)
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (17.5ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Migrating to DeleteUserTable (20130128133126)
+Migrating to CreateUsers (20130128134403)
+Migrating to AddColumnToUsers (20130128135725)
+  [1m[35m (266.0ms)[0m  ALTER TABLE `users` ADD `email` varchar(255)
+  [1m[36m (159.1ms)[0m  [1mALTER TABLE `users` ADD `dept` varchar(255)[0m
+  [1m[35m (116.3ms)[0m  ALTER TABLE `users` ADD `age` int(11)
+  [1m[36m (21.1ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20130128135725')[0m
+  [1m[35m (0.3ms)[0m  SELECT `schema_migrations`.`version` FROM `schema_migrations` 
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2013-01-28 23:40:29 +0530
+Connecting to database specified by database.yml
+Served asset /rails.png - 304 Not Modified (11ms)
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2013-01-29 10:30:14 +0530
+Connecting to database specified by database.yml
+Served asset /rails.png - 304 Not Modified (23ms)
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (41.8ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Migrating to DeleteUserTable (20130128133126)
+Migrating to CreateUsers (20130128134403)
+Migrating to AddColumnToUsers (20130128135725)
+Migrating to AddAttributToUser (20130129064037)
+  [1m[35m (343.7ms)[0m  ALTER TABLE `users` ADD `contact_no` int(11)
+  [1m[36m (25.5ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20130129064037')[0m
+  [1m[35m (0.1ms)[0m  SELECT `schema_migrations`.`version` FROM `schema_migrations` 
+Connecting to database specified by database.yml

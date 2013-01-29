@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="demo">I'm Abhidip..Your's..???</p>
+<form>
+First Name: <input type="text" id="1stname" ><br>
+Last Name:  <input type="text" id="lastname" >
+</form> 
+<input type="button" value="More Details" onclick="myFunction()" />
+<input type="button" value="Your Name.." onclick="display()" />
+<script>
+function myFunction()
+{
+var para=document.createElement("p");
+var t=document.createTextNode("My title is Ray...");
+para.appendChild(t);
+document.body.appendChild(para);
+};
+function display()
+{
+document.getElementById("demo").innerHTML= document.getElementById('1stname').value +" "+document.getElementById('lastname').value;
+alert("Thank You for knowing me..")
+};
+</script>
+
+</body>
+</html>
+
