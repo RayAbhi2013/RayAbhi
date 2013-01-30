@@ -3,10 +3,10 @@ class User < ActiveRecord::Base
   validates :name, :email, :presence => true
   validates_length_of :name,:email, :minimum => 2
   
-  before_create :record_signup
+ # before_create :record_signup
 
-  public
-    def name_capitalize
-      :name.capitalize
-    end
+  #public
+   # def name_capitalize
+    #  :name.capitalize
+    #end
 end
