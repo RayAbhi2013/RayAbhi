@@ -2,9 +2,10 @@
  
 <%@users.each do |u|%>
   <%=u.name%>
-  <%=u.email%> <%=link_to "Show", user_path(@users)%> 
-  <%=link_to "Edit",edit_user_path(@users)%>
-  <%=link_to "Delete", :users#destroy%> <br>
+  <%=u.email%> <%=link_to "Show", user_path(u)%> 
+  <%=link_to "Edit",new_user_path%>
+  
+  <br>
 
 <%end%>
 <%=link_to "create User",new_user_path%>

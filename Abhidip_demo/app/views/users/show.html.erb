@@ -1,9 +1,11 @@
 <html>
-<%@users.each do |u|%>
-<%=u.name%>
-<%=u.email%>
-<%=u.roll%>
-<%=u.dept%>
-<%=u.age%>
-<%=u.contact_no%>
+<%=@user.name%><br>
+<%=@user.email%><br>
+<%=@user.roll%><br>
+<%=@user.dept%><br>
+<%=@user.age%><br>
+<%=@user.contact_no%><br>
+<%= link_to "Home",users_path%>
+<%= link_to "Edit",edit_user_path(@user)%>
+<%=link_to "delete User", user_path(@user), :method=>:delete %>
 </html>
