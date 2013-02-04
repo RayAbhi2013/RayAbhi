@@ -1,11 +1,14 @@
 <html>
-<%=@user.name%><br>
-<%=@user.email%><br>
-<%=@user.roll%><br>
-<%=@user.dept%><br>
-<%=@user.age%><br>
-<%=@user.contact_no%><br>
+Name:&nbsp;&nbsp;&nbsp;<%=@user.name%>&nbsp;&nbsp;&nbsp;
+
+<%=link_to "Post",new_user_post_path(@user)%>
+<%=link_to "See Posts...",user_post_path(@user,@post)%><br>
+Email:&nbsp;&nbsp;&nbsp;<%=@user.email%><br>
+Roll:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<%=@user.roll%><br>
+Dept.:&nbsp;&nbsp;&nbsp;<%=@user.dept%><br>
+Age:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<%=@user.age%><br>
+Contact-no:&nbsp;&nbsp;<%=@user.contact_no%><br>
 <%= link_to "Home",users_path%>
-<%= link_to "Edit",edit_user_path(@user_u)%>
+<%= link_to "Edit",edit_user_path(@user)%>
 <%=link_to "delete User", user_path(@user), :method=>:delete %>
 </html>

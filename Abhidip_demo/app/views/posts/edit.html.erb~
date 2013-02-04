@@ -1,0 +1,7 @@
+<%= form_for @post do |p|%>
+<%=p.label :title%>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<%=p.text_field :title%><br>
+<%=p.label :description%>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<%=p.text_area :description%><br>
+<%end%>

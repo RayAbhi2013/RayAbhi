@@ -1,0 +1,9 @@
+
+<%=form_for @post,:url=>user_posts_path do |f|%>
+<i><%=f.label :title%></i>
+<%=f.text_field :title%><br>
+<br>
+<i><%=f.label :description%></i><br>
+<%=f.text_area :description%>
+<%= f.submit%>
+<%end%>
