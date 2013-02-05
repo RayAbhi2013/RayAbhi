@@ -1,6 +1,4 @@
-<header>
-<h2><i>Welcome to PostHub.com...</i><img src="images/index.jpeg"></h2>
-</header>
+
 
 <%@users.each do |u|%>
 <hr>

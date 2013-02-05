@@ -1,8 +1,9 @@
 <html>
+<% render :partial=>"header"%>
 Name:&nbsp;&nbsp;&nbsp;<%=@user.name%>&nbsp;&nbsp;&nbsp;
 
 <%=link_to "Post",new_user_post_path(@user)%>
-<%=link_to "See Posts...",user_post_path(@user,@post)%><br>
+<%=link_to "See Posts...",user_post_path(@user)%><br>
 Email:&nbsp;&nbsp;&nbsp;<%=@user.email%><br>
 Roll:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<%=@user.roll%><br>
 Dept.:&nbsp;&nbsp;&nbsp;<%=@user.dept%><br>

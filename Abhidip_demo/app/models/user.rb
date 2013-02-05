@@ -1,5 +1,5 @@
 class User < ActiveRecord::Base
-  has_many :posts
+  has_many :posts,:dependent => :destroy
   attr_accessible :name, :email, :roll, :age, :dept,:contact_no
   validates  :email, :presence => true
   

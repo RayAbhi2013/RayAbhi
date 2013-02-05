@@ -1,0 +1,6 @@
+if @user.save
+UserMailer.welcome_email(@user).deliver
+:notice => 'User was successfully created.'
+else
+render :action=>'create'
+end

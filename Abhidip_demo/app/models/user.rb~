@@ -1,9 +1,9 @@
 class User < ActiveRecord::Base
-  has_many :posts
+  has_many :posts,:dependent => :destroy
   attr_accessible :name, :email, :roll, :age, :dept,:contact_no
   validates  :email, :presence => true
   
-  validates :email,:uniqueness => true
+  validates :email,:uniqueness => true,:message => "Email Exists..!"
   validates_format_of :email, :with => /\A[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+.[A-Za-z]+\z/i
  
 
@@ -12,7 +12,7 @@ class User < ActiveRecord::Base
   protected
   def ensure_name_has_value
     if name.nil?
-      self.name = email unless email.blank?
+      name = email unless email.blank?
     end
  end
     

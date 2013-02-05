@@ -1,6 +1,4 @@
-<header>
-<h2><i>Welcome to PostHub.com...</i><img src="images/index.jpeg"></h2>
-</header>
+
 
 <%@users.each do |u|%>
 <hr>
@@ -12,7 +10,5 @@ Email:<%=u.email%>&nbsp;&nbsp;
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <%=link_to "*Create New User*",new_user_path%>
-<footer style="position:fixed;">
-<p>All copyrights reserved @RayAbhi...</p>
-</footer>
+
 

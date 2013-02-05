@@ -7,10 +7,11 @@ def new
 end
 def create
   @user=User.create(params[:user])
-if @user.save
- UserMailer.welcome_email(@user).deliver
+ if @user.save
+UserMailer.welcome_email(@user).deliver
+
 else
- render :action=>'create'
+ <%= render :action=>'edit' %>
 end
  redirect_to users_path
 end  
