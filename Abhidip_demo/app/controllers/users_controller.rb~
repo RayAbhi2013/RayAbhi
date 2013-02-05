@@ -11,7 +11,7 @@ def create
 UserMailer.welcome_email(@user).deliver
 
 else
- <%= render 'edit' %>
+ <%= render :action=>'edit' %>
 end
  redirect_to users_path
 end  

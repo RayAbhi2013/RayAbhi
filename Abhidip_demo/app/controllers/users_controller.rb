@@ -7,12 +7,7 @@ def new
 end
 def create
   @user=User.create(params[:user])
- if @user.save
-UserMailer.welcome_email(@user).deliver
-
-else
- <%= render :action=>'edit' %>
-end
+ 
  redirect_to users_path
 end  
 def show
