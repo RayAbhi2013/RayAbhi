@@ -43163,3 +43163,20 @@ SyntaxError (/home/abhidipray/RayAbhi/Abhidip_demo/app/controllers/users_control
   Rendered /usr/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.6ms)
   Rendered /usr/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
   Rendered /usr/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.9ms)
+Connecting to database specified by database.yml
+  [1m[36m (231.7ms)[0m  [1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (305.1ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)
+  [1m[36m (13.1ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Migrating to DeleteUserTable (20130128133126)
+  [1m[35m (0.2ms)[0m  DROP TABLE `abhis`
+Mysql2::Error: Unknown table 'abhis': DROP TABLE `abhis`
+Connecting to database specified by database.yml
+  [1m[36m (1.0ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Migrating to DeleteUserTable (20130128133126)
+  [1m[35m (0.2ms)[0m  DROP TABLE `abhis`
+Mysql2::Error: Unknown table 'abhis': DROP TABLE `abhis`
+Connecting to database specified by database.yml
+  [1m[36m (1.2ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Migrating to DeleteUserTable (20130128133126)
+  [1m[35m (0.2ms)[0m  DROP TABLE `abhis`
+Mysql2::Error: Unknown table 'abhis': DROP TABLE `abhis`
