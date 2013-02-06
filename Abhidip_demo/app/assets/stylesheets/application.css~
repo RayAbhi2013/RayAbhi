@@ -12,7 +12,8 @@ a:hover{ color:#724949; }
                  display:block;}
 #footer{position:fixed;
         bottom:10px;}
-
+#horizontal{position:fixed;
+        bottom:20px;}
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.

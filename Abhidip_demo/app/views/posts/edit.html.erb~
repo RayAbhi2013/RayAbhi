@@ -1,7 +1,10 @@
-<%= form_for @post do |p|%>
-<%=p.label :title%>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<%=p.text_field :title%><br>
-<%=p.label :description%>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<%=p.text_area :description%><br>
+<html>
+<%=form_for @posts,:url=>user_post_path do |f|%>
+<u><i><%=f.label :title%></i></u>
+<%=f.text_field :title%><br>
+<u><i><%=f.label :description%><br>
+<%=f.text_area :description%></i></u>
+<%= f.submit%>
 <%end%>
+
+</html>

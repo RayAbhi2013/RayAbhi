@@ -16,6 +16,7 @@ end
 def edit 
  user=User.find(params[:id])
  @posts=user.posts.find(params[:user_id])
+
 end
 
 def update

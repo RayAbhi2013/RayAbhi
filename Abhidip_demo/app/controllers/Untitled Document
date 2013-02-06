@@ -10,3 +10,13 @@ if @user.save
  else
   render :action=>'create'
  end
+
+<%= link_to "Sign in", '#' %>
+
+protected
+  def ensure_name_has_value
+    if user_name.nil?
+      user_name = email unless email.blank?
+      redirect_to users_path
+    end
+ end

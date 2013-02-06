@@ -4,3 +4,11 @@ UserMailer.welcome_email(@user).deliver
 else
 render :action=>'create'
 end
+
+if @user.save
+  UserMailer.welcome_email(@user).deliver
+ else
+  render :action=>'create'
+ end
+
+<%= link_to "Sign in", '#' %>
