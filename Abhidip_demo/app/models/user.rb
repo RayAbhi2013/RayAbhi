@@ -2,7 +2,7 @@ class User < ActiveRecord::Base
   has_many :posts,:dependent => :destroy
   attr_accessible :user_name, :email, :roll, :age, :dept,:contact_no
   validates  :email, :presence => true
-  
+  validates_length_of :contact_no,:minimum=>8,:maximum=>10
   validates :email,:uniqueness => true
   validates_format_of :email, :with => /\A[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+.[A-Za-z]+\z/i
   before_create do |user|
@@ -12,13 +12,14 @@ class User < ActiveRecord::Base
   user.user_name = user.user_name.capitalize
   end
   
-  before_validation :ensure_login_has_a_value
+  before_validation :replace
  
   protected
-  def ensure_login_has_a_value
+  def replace
     if user_name.nil?
-      self.user_name = email unless email.nil?
+      self.user_name =email unless email.nil?
     end
+    
   end
   
     
