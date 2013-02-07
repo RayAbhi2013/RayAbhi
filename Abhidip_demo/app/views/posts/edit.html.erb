@@ -1,5 +1,5 @@
 <html>
-<%=form_for @posts,:url=>user_post_path do |f|%>
+<%=form_for @post,:url=>user_post_path(@user) do |f|%>
 <u><i><%=f.label :title%></i></u>
 <%=f.text_field :title%><br>
 <br>

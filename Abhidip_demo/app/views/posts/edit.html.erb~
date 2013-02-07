@@ -1,7 +1,8 @@
 <html>
-<%=form_for @posts,:url=>user_post_path do |f|%>
+<%=form_for @post,:url=>user_post_path do |f|%>
 <u><i><%=f.label :title%></i></u>
 <%=f.text_field :title%><br>
+<br>
 <u><i><%=f.label :description%><br>
 <%=f.text_area :description%></i></u>
 <%= f.submit%>

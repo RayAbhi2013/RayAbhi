@@ -1,9 +1,9 @@
 <html>
 
-Name:&nbsp;&nbsp;&nbsp;<%=@user.name%>&nbsp;&nbsp;&nbsp;
+Name:&nbsp;&nbsp;&nbsp;<%=@user.user_name%>&nbsp;&nbsp;&nbsp;
 
 <a><%=link_to "Post",new_user_post_path(@user)%></a>
-<a><%=link_to "See Posts...",user_post_path(@user)%></a><br>
+<a><%=link_to "See Posts...",user_posts_path(@user)%></a><br>
 Email:&nbsp;&nbsp;&nbsp;<%=@user.email%><br>
 Roll:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<%=@user.roll%><br>
 Dept.:&nbsp;&nbsp;&nbsp;<%=@user.dept%><br>
