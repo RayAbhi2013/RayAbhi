@@ -9,9 +9,9 @@
 </head>
 <body>
 
-    <%= render 'layouts/header' %>
+    <%= render '_shared/header' %>
 <%= yield %>
-<hr id="horizontal">
-     <%= render 'layouts/footer' %>
+<hr>
+     <%= render '_shared/footer' %>
 </body>
 </html>

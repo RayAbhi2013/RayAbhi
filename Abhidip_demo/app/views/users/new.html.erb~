@@ -1,5 +1,5 @@
 <html>
-<i>New User Informations..:--</i>
+<i><u>New User Informations..</u>:--</i>
 <%= render :partial => "form" %>
 
 </html>
